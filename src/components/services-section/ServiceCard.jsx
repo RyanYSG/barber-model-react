@@ -1,6 +1,11 @@
-function ServiceCard(props) {
+import { forwardRef, Ref } from "react";
+
+const ServiceCard = forwardRef(function (props, ref) {
   return (
-    <article className="flex flex-col h-1/2 xl:flex-row items-center xl:items-center xl:gap-5 justify-center text-center p-5 ">
+    <article
+      ref={ref}
+      className="flex flex-col h-1/2 xl:flex-row items-center xl:items-center xl:gap-5 justify-center text-center p-5 "
+    >
       <header>
         <div className="relative overflow-hidden">
           <img
@@ -30,6 +35,6 @@ function ServiceCard(props) {
       </footer>
     </article>
   );
-}
+});
 
 export default ServiceCard;

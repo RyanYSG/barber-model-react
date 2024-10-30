@@ -1,6 +1,9 @@
-function ContactCard(props) {
+import { forwardRef, Ref } from "react";
+
+const ContactCard = forwardRef(function (props, ref) {
   return (
     <a
+      ref={ref}
       href="#"
       className="hover:bg-black rounded-xl  hover:text-white flex gap-2 text-2xl font-light border-2 border-black w-full p-5 items-center"
     >
@@ -8,6 +11,6 @@ function ContactCard(props) {
       <span className="leading-6 h-full ">{props.children}</span>
     </a>
   );
-}
+});
 
 export default ContactCard;

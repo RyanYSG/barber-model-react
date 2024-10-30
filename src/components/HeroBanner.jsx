@@ -8,6 +8,7 @@ function HeroBanner() {
       style={{
         backgroundImage: `url("${HeroImage}")`,
         backgroundPosition: "70%",
+        backgroundAttachment: "fixed",
       }}
     >
       <article className="text-white text-center xl:py-5 xl:px-10 xl:text-left flex flex-col gap-10 w-full">

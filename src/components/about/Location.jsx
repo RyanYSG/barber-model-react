@@ -12,7 +12,7 @@ function Location() {
           <iframe
             className="w-full h-full"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.7271571829506!2d-46.42119282547324!3d-23.50633505957134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce638c9c206f47%3A0xef187776d9fe2685!2sRua%20Guarait%C3%A1%2C%20979%20-%20Vila%20Curu%C3%A7%C3%A1%20Velha%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008030-310!5e0!3m2!1spt-BR!2sbr!4v1730233336624!5m2!1spt-BR!2sbr"
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
@@ -28,7 +28,7 @@ function Location() {
             </p>
           </header>
           <footer className="flex flex-col w-full">
-            <p className="font-light text-xl">
+            <p className="font-light text-center xl:text-left 2xl:text-left text-xl">
               Curuça Velha, Rua Guaraíta - 979
             </p>
             <Link
